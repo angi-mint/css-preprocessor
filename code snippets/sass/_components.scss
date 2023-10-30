@@ -1,6 +1,6 @@
 // ASIDE
 aside {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: $background-gray;
   backdrop-filter: blur(5px);
   width: 390px;
   padding: 20px;
@@ -20,13 +20,13 @@ aside {
 
       a {
         text-decoration: none;
-        color: #5c6971;
+        color: $dhbw-gray;
         display: block;
         padding: 10px 0;
-        border-bottom: 1px solid #5c6971;
+        border-bottom: 1px solid $dhbw-gray;
 
         &:hover {
-          color: #e2001a;
+          color: $dhbw-red;
         }
       }
     }
@@ -55,7 +55,7 @@ aside {
 
     .text {
       text-align: center;
-      background: rgba(255,255,255,0.5);
+      background: $background-gray;
       position: absolute;
       top: 100%;
       left: 0;
@@ -96,7 +96,7 @@ aside {
     z-index: 50;
 
     *{
-      color: white;
+      color: $accent-color;
     }
 
     h1 {
