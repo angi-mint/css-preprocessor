@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400&family=Roboto+Condensed&display=swap');
+* {
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.wrapper:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+header.smaller #logo{
+    height: 40px;
+}
+header.smaller nav.main ul li a {
+    line-height: 80px;
+}
+#logo {
+    float: left;
+    height: 60px;
+    margin-top: 20px;
+    transition: all 0.5s 0.2s;
+}
+nav.main {
+    float: right;
+}
+nav.main ul {
+    margin: 0;
+    padding: 0;
+}
+nav.main ul li {
+    display: inline-block;
+}
+nav.main ul li a {
+    display: block;
+    line-height: 100px;
+    text-decoration: none;
+    color: #5c6971;
+    padding: 0 20px;
+    transition: all 0.5s 0.1s;
+}
+nav.main ul li a:hover {
+    background-color: #e2001a;
+    color: white;
+}
+.keyvisual {
+    background-image: url(keyvisual.jpg);
+    height: 800px;
+    position: relative;
+}
+.keyvisual:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 100%);
+}
+aside {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    width: 390px;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 200px;
+    position: relative;
+}
+aside ul {
+    margin: 0;
+    padding: 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #5c6971;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #5c6971;
+}
+aside ul li a:hover {
+    color: #e2001a;
+}
+aside ul li:last-child a {
+    border-bottom: none;
+}
+.keyvisual .text {
+    position: absolute;
+    bottom: 50px;
+    z-index: 50;
+}
+.keyvisual .text *{
+    color: white;
+}
+.keyvisual .text h1 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+.keyvisual .text h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.button {
+    display: inline-block;
+    background-color: #e2001a;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 20px;
+    border-radius: 3px;
+}
+.teaser ul {
+    display: flex;
+    margin: 50px 0 0 0;
+    padding: 0;
+    width: calc(100% + 40px);
+    position: relative;
+    left: -20px;
+}
+.teaser ul li {
+    width: 50%;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.teaser ul li img {
+    width: 100%;
+    vertical-align: top;
+}
+.teaser ul li .text {
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.teaser ul li:hover .text {
+    top: 0;
+    opacity: 1;
+}
+.teaser ul li .text h2 {
+    margin-top: 50px;
+}
+footer {
+    background-color: #262626;
+    margin-top: 50px;
+    padding: 20px;
+}
+footer img {
+    width: 150px;
+    margin-top: 20px;
+}
+nav.footer {
+    float: right;
+}
+nav.footer ul {
+    margin: 0;
+    padding: 0;
+}
+nav.footer ul li {
+    display: inline-block;
+}
+nav.footer ul li a {
+    display: block;
+    line-height: 100px;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+nav.footer ul li a:hover {
+    color: #e2001a;
+}
